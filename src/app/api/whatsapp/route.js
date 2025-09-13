@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { connectToDatabase, closeDatabaseConnection } from '../../db';
+import { connectToDatabase, closeDatabaseConnection } from '@/db';
 
 export async function GET(request) {
     const { searchParams } = new URL(request.url);
